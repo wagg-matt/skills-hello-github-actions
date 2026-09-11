@@ -2,8 +2,11 @@ name: On pull request
 
 on:
   pull_request:
-    jobs:
-      PR:
+    branches:
+    - main
+
+jobs:
+  PR:
         runs-on: ubuntu-latest
         steps:
         - name: "Update"
