@@ -5,10 +5,14 @@ on:
 
 jobs:
   hello-world:
+    name: To say hello
+    runs-on: ubuntu-latest
     steps:
       - name: "Hello world"
         run: echo "Hello world"
   another-job:
+    name: To update code
+    runs-on: ubuntu-latest
     steps:
       - name: "Update"
         run: echo "we've updated out code"
