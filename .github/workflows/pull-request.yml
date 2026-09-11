@@ -1,0 +1,13 @@
+name: On pull request
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  PR:
+        runs-on: ubuntu-latest
+        steps:
+        - name: "Update"
+          run: echo "created a pull request"
