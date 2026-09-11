@@ -1,10 +1,10 @@
 name: On pull request
 
 on:
-    pull-request:
-        jobs:
-            PR:
-                runs-on: ubuntu-latest
-                steps:
-                    - name: "Update"
-                    run: echo "created a pull request"
+  pull-request:
+    jobs:
+      PR:
+        runs-on: ubuntu-latest
+        steps:
+        - name: "Update"
+          run: echo "created a pull request"
