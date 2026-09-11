@@ -2,15 +2,13 @@ name: On push request
 
 on:
   push:
-    jobs:
-      hello-world:
-      runs-on: ubuntu-latest
-      steps:
-        - name: "Hello world"
-          run: echo "Hello world"
-      another-job:
-        runs-on: ubuntu-latest
-        steps:
-          - name: "Update"
-            run: echo "we've updated out code"
-  
+
+jobs:
+  hello-world:
+    steps:
+      - name: "Hello world"
+        run: echo "Hello world"
+  another-job:
+    steps:
+      - name: "Update"
+        run: echo "we've updated out code"
